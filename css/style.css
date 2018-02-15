@@ -1,0 +1,245 @@
+/* Global Layout Set-up */
+* {
+  box-sizing: border-box;
+
+}
+
+body {
+
+   margin: 0 auto;
+   font-size: 1em;
+   color: #838c8b;
+   font-family: 'Hadar-font', sans-serif;
+  }
+
+
+  /**************************
+        Header style
+  **************************/
+
+  header {
+    text-align: center;
+  }
+
+  header h1 {
+    font-family: 'Hadar-font', sans-serif;
+    background: #52bab3;
+    color: #fff;
+    font-size: 1.7em;
+    margin-top: 0;
+    padding: 38px 0 38px;
+    text-transform: uppercase;
+
+  }
+
+  header h2 {
+   font-family: 'Hadar-font', sans-serif;
+   font-size: 1.6em;
+   margin-top: 40px;
+   color: #496361;
+  }
+
+  header p {
+    width: 90%;
+    margin: 20px auto 20px;
+    line-height: 150%;
+  }
+
+  header hr {
+    border-left: none;
+    border-right: none;
+    border-top: solid 5px #52bab3;
+    border-bottom: solid 2px #52bab3;
+    height: 5px;
+    width: 85%;
+  }
+
+  /**************************
+        Form style
+  **************************/
+
+  fieldset {
+    padding: 0;
+    margin: 0;
+    border: none;
+  }
+
+  form {
+    margin: auto;
+    width: 90%;
+
+  }
+
+  input,
+  select,
+  textarea {
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: #e6e6e6;
+    border: none;
+    border-radius: 4%;
+    margin: 15px 0 15px;
+  }
+
+  input:hover,
+  select:hover,
+  textarea:hover {
+    border: solid 1px #52bab3;
+    transition: all .3s;
+
+  }
+
+  textarea {
+    height: 95px;
+  }
+
+  button {
+    padding: 19px 39px 18px 39px;
+    color: #FFF;
+    background-color: #52bab3;
+    font-size: 18px;
+    text-align: center;
+    font-style: normal;
+    border-radius: 5px;
+    width: 100%;
+    border: 1px solid white;
+    border-width: 1px 1px 3px;
+    box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+    margin-bottom: 10px;
+  }
+
+  [required]::placeholder {
+ text-align: right;
+ padding-right: 5px;
+
+}
+
+.nsf {
+  margin-top: 35px;
+}
+
+#zip-code {
+  width: 33%;
+}
+
+.textarea {
+  margin: 32px 0 22px;
+}
+
+.contact,
+.newsletter {
+  display: block;
+  font-size: 1.3em;
+  padding: 28px 0 28px;
+  text-align: left;
+  font-weight: bold;
+  color: #496361;
+}
+
+.hr-b {
+  margin-top: 25px;
+  border: solid 1px #52bab3;
+
+}
+
+.radio-checkbox {
+  display: inline;
+  width: inherit;
+  height: inherit;
+  margin: 8px;
+
+}
+
+
+
+input:focus,
+textarea:focus,
+select:focus {
+
+    background-color: white;
+
+}
+
+
+/**************************
+      Footer style
+**************************/
+
+footer p {
+  text-align: center;
+  margin-bottom: 30px;
+  font-style: italic;
+}
+
+
+/**************************
+      Styles for larger screens - Media Query
+**************************/
+
+
+@media (min-width: 768px) {
+
+    body {
+      background: #f8f8f8;
+    }
+
+
+    header hr {
+      width: 65%;
+    }
+
+    form {
+      width: 65%;
+      margin: auto;
+      background: #fff;
+      border-radius: 5px;
+      padding-bottom: 40px;
+      box-shadow: 5px 5px 13px rgba(0, 0, 0, .05);
+    }
+
+    input,
+    select,
+    textarea {
+      margin: auto;
+  }
+
+  input,
+  select,
+  .label {
+    display: inline-block;
+    margin-bottom: 15px;
+  }
+
+  input,
+  select {
+    width: 69%;
+  }
+
+  .label {
+   width: 30%;
+  }
+
+  fieldset {
+  width: 90%;
+  margin: auto;
+  }
+
+  .radio-checkbox {
+    display: inline;
+    width: 5%;
+
+  }
+
+
+}
+
+
+
+/* ---- Float clearfix ---- */
+
+.clearfix::after {
+  content: " ";
+  display: table;
+  clear: both;
+}
