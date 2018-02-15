@@ -151,7 +151,11 @@ body {
 
 }
 
+input[type="radio"],
+input[type="checkbox"] {
+  background: none;
 
+}
 
 input:focus,
 textarea:focus,
